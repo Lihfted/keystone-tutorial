@@ -1,0 +1,25 @@
+import React from 'react';
+
+export default class MessageComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      message: ""
+    }
+  }
+
+  updateMessage(message) {
+    this.setState({
+      message: message
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.message}
+      </div>
+    );
+  }
+}
